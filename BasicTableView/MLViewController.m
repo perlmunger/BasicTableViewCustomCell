@@ -7,6 +7,7 @@
 //
 
 #import "MLViewController.h"
+#import "VideoCustomCell.h"
 
 @interface MLViewController ()
 
@@ -17,13 +18,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self.tableView registerNib:[UINib nibWithNibName:@"VideoCustomCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"CustomCellReuseID"];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - UITableView Delegate/DataSource
+
+- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	return 10;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = @"CustomCellReuseID";
+    VideoCustomCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.vidName.text = [NSString stringWithFormat:@"%d",indexPath.row];
+    return cell;
+}
+
+
 
 @end

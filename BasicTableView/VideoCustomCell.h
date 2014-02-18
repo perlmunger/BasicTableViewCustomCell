@@ -1,5 +1,5 @@
 //
-//  MLViewController.h
+//  VideoCustomCell.h
 //  BasicTableView
 //
 //  Created by Matt Long on 2/17/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MLViewController : UITableViewController
+@interface VideoCustomCell : UITableViewCell
+
+@property (nonatomic, weak) IBOutlet UILabel *vidName;
 
 @end

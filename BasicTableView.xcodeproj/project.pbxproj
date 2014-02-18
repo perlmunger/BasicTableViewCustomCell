@@ -21,6 +21,8 @@
 		B3321DCB18B2DC5E00052D55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3321DAD18B2DC5E00052D55 /* UIKit.framework */; };
 		B3321DD318B2DC5E00052D55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3321DD118B2DC5E00052D55 /* InfoPlist.strings */; };
 		B3321DD518B2DC5E00052D55 /* BasicTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3321DD418B2DC5E00052D55 /* BasicTableViewTests.m */; };
+		B3321DE018B2DCBA00052D55 /* VideoCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3321DDF18B2DCBA00052D55 /* VideoCustomCell.m */; };
+		B3321DE218B2DCDD00052D55 /* VideoCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3321DE118B2DCDD00052D55 /* VideoCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		B3321DD018B2DC5E00052D55 /* BasicTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		B3321DD218B2DC5E00052D55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3321DD418B2DC5E00052D55 /* BasicTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewTests.m; sourceTree = "<group>"; };
+		B3321DDE18B2DCBA00052D55 /* VideoCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCustomCell.h; sourceTree = "<group>"; };
+		B3321DDF18B2DCBA00052D55 /* VideoCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCustomCell.m; sourceTree = "<group>"; };
+		B3321DE118B2DCDD00052D55 /* VideoCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +122,11 @@
 				B3321DBB18B2DC5E00052D55 /* Main.storyboard */,
 				B3321DBE18B2DC5E00052D55 /* MLViewController.h */,
 				B3321DBF18B2DC5E00052D55 /* MLViewController.m */,
-				B3321DC118B2DC5E00052D55 /* Images.xcassets */,
+				B3321DDE18B2DCBA00052D55 /* VideoCustomCell.h */,
+				B3321DDF18B2DCBA00052D55 /* VideoCustomCell.m */,
+				B3321DE118B2DCDD00052D55 /* VideoCustomCell.xib */,
 				B3321DB018B2DC5E00052D55 /* Supporting Files */,
+				B3321DC118B2DC5E00052D55 /* Images.xcassets */,
 			);
 			path = BasicTableView;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3321DC218B2DC5E00052D55 /* Images.xcassets in Resources */,
+				B3321DE218B2DCDD00052D55 /* VideoCustomCell.xib in Resources */,
 				B3321DB418B2DC5E00052D55 /* InfoPlist.strings in Resources */,
 				B3321DBD18B2DC5E00052D55 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +261,7 @@
 			files = (
 				B3321DB618B2DC5E00052D55 /* main.m in Sources */,
 				B3321DC018B2DC5E00052D55 /* MLViewController.m in Sources */,
+				B3321DE018B2DCBA00052D55 /* VideoCustomCell.m in Sources */,
 				B3321DBA18B2DC5E00052D55 /* MLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
